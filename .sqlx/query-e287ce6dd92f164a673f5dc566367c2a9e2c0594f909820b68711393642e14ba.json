@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "DELETE FROM messwerte WHERE zeitstempel < datetime('now', '-3 months')",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": []
+  },
+  "hash": "e287ce6dd92f164a673f5dc566367c2a9e2c0594f909820b68711393642e14ba"
+}

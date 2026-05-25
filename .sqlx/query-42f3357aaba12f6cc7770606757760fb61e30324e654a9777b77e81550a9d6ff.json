@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "DELETE FROM messwerte WHERE sensor_id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "42f3357aaba12f6cc7770606757760fb61e30324e654a9777b77e81550a9d6ff"
+}

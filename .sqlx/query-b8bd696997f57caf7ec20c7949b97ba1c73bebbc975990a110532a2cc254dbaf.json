@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "DELETE FROM alarm_historie WHERE sensor_id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "b8bd696997f57caf7ec20c7949b97ba1c73bebbc975990a110532a2cc254dbaf"
+}

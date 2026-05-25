@@ -1,0 +1,44 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT id, sensor_id, temperatur, akku_prozent, zeitstempel as \"zeitstempel: String\"\n               FROM messwerte\n               WHERE zeitstempel >= datetime('now', '-' || ? || ' days')\n               AND sensor_id = ?\n               ORDER BY zeitstempel ASC",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "sensor_id",
+        "ordinal": 1,
+        "type_info": "Integer"
+      },
+      {
+        "name": "temperatur",
+        "ordinal": 2,
+        "type_info": "Float"
+      },
+      {
+        "name": "akku_prozent",
+        "ordinal": 3,
+        "type_info": "Integer"
+      },
+      {
+        "name": "zeitstempel: String",
+        "ordinal": 4,
+        "type_info": "Datetime"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  "hash": "4447cfe9e97373924e992661fc99b81b0f6907e054520b3e0b001b3d01449a2b"
+}

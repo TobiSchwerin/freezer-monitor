@@ -1,0 +1,20 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT zeitstempel as \"zeitstempel: String\" FROM messwerte WHERE sensor_id = ? ORDER BY zeitstempel DESC LIMIT 1",
+  "describe": {
+    "columns": [
+      {
+        "name": "zeitstempel: String",
+        "ordinal": 0,
+        "type_info": "Datetime"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true
+    ]
+  },
+  "hash": "f6a2fd944cff8204c2591a44b6ca37257ff00f274187f44ab7b9f27e20317ebf"
+}

@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "DELETE FROM alarm_historie WHERE zeitstempel < datetime('now', '-3 months')",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": []
+  },
+  "hash": "92bc9ed785ee7de37869e0a5a0e3c7f18a14b0f7694bd3ea1b5301d7624da2ee"
+}

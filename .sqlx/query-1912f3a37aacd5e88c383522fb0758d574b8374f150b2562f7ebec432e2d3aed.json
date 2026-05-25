@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO messwerte (sensor_id, temperatur, akku_prozent) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "1912f3a37aacd5e88c383522fb0758d574b8374f150b2562f7ebec432e2d3aed"
+}

@@ -1,0 +1,26 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT sensor_id, offline_minuten FROM alarm_config",
+  "describe": {
+    "columns": [
+      {
+        "name": "sensor_id",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "offline_minuten",
+        "ordinal": 1,
+        "type_info": "Integer"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false
+    ]
+  },
+  "hash": "9625e5415e6dcaa8bdf143759f2f52857674ae00337f56d2b0f78259547c9667"
+}

@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO alarm_historie (sensor_id, alarm_typ, nachricht) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "f77c90fafe30cd9bd341d9a78f75b39ceac97a5b6686764850960769a5c1f9d8"
+}

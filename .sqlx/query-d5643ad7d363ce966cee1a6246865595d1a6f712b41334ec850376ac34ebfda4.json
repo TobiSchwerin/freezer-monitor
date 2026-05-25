@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO alarm_config (sensor_id, temperatur_max, akku_min, offline_minuten) VALUES (?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "d5643ad7d363ce966cee1a6246865595d1a6f712b41334ec850376ac34ebfda4"
+}

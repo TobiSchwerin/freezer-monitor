@@ -1,0 +1,1 @@
+ALTER TABLE alarm_config ADD COLUMN alarm_quittiert INTEGER NOT NULL DEFAULT 0;

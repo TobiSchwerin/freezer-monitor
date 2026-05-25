@@ -1,0 +1,26 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT temperatur_max, akku_min FROM alarm_config WHERE sensor_id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "temperatur_max",
+        "ordinal": 0,
+        "type_info": "Float"
+      },
+      {
+        "name": "akku_min",
+        "ordinal": 1,
+        "type_info": "Integer"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false,
+      false
+    ]
+  },
+  "hash": "a85e2fb9aeaefa782f18433466e0c818056cff3d21529b1fd470d85efc8ddbb6"
+}

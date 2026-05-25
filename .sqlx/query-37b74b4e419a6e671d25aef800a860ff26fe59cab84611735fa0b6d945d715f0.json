@@ -1,0 +1,44 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT id, sensor_id, temperatur_max, akku_min, offline_minuten FROM alarm_config",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "sensor_id",
+        "ordinal": 1,
+        "type_info": "Integer"
+      },
+      {
+        "name": "temperatur_max",
+        "ordinal": 2,
+        "type_info": "Float"
+      },
+      {
+        "name": "akku_min",
+        "ordinal": 3,
+        "type_info": "Integer"
+      },
+      {
+        "name": "offline_minuten",
+        "ordinal": 4,
+        "type_info": "Integer"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "37b74b4e419a6e671d25aef800a860ff26fe59cab84611735fa0b6d945d715f0"
+}
