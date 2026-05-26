@@ -1,0 +1,18 @@
+services:
+  freezer-monitor:
+    build: .
+    image: freezer-monitor:latest
+    container_name: freezer-monitor
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data/freezer.db:/app/freezer.db
+      - ./data/firmware:/app/firmware
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks:
+      - caddy-net
+
+networks:
+  caddy-net:
+    external: true
