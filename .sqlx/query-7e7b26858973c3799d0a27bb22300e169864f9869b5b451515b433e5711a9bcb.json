@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "UPDATE alarm_config SET temperatur_max = ?, akku_min = ?, offline_minuten = ?, alarm_quittiert = ? WHERE sensor_id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 5
+    },
+    "nullable": []
+  },
+  "hash": "7e7b26858973c3799d0a27bb22300e169864f9869b5b451515b433e5711a9bcb"
+}

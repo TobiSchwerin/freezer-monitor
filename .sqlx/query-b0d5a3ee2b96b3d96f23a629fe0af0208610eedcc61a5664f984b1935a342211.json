@@ -1,10 +1,10 @@
 {
   "db_name": "SQLite",
-  "query": "SELECT id, name, standort FROM sensoren",
+  "query": "SELECT id as \"id!: i64\", name, standort, sleep_minuten as \"sleep_minuten!: i64\" FROM sensoren WHERE id = ?",
   "describe": {
     "columns": [
       {
-        "name": "id",
+        "name": "id!: i64",
         "ordinal": 0,
         "type_info": "Integer"
       },
@@ -17,16 +17,22 @@
         "name": "standort",
         "ordinal": 2,
         "type_info": "Text"
+      },
+      {
+        "name": "sleep_minuten!: i64",
+        "ordinal": 3,
+        "type_info": "Integer"
       }
     ],
     "parameters": {
-      "Right": 0
+      "Right": 1
     },
     "nullable": [
       false,
       false,
-      true
+      true,
+      false
     ]
   },
-  "hash": "ef1c2fe7397e71d7e31a15a494884e271f97ca32cc840815d97f07ee192751bb"
+  "hash": "b0d5a3ee2b96b3d96f23a629fe0af0208610eedcc61a5664f984b1935a342211"
 }

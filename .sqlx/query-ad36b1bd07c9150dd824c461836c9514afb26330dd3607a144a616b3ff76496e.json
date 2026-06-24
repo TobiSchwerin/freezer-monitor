@@ -1,6 +1,6 @@
 {
   "db_name": "SQLite",
-  "query": "SELECT id, sensor_id, temperatur_max, akku_min, offline_minuten FROM alarm_config",
+  "query": "SELECT id, sensor_id, temperatur_max, akku_min, offline_minuten, alarm_quittiert as \"alarm_quittiert!: i64\" FROM alarm_config",
   "describe": {
     "columns": [
       {
@@ -27,6 +27,11 @@
         "name": "offline_minuten",
         "ordinal": 4,
         "type_info": "Integer"
+      },
+      {
+        "name": "alarm_quittiert!: i64",
+        "ordinal": 5,
+        "type_info": "Integer"
       }
     ],
     "parameters": {
@@ -37,8 +42,9 @@
       false,
       false,
       false,
+      false,
       false
     ]
   },
-  "hash": "37b74b4e419a6e671d25aef800a860ff26fe59cab84611735fa0b6d945d715f0"
+  "hash": "ad36b1bd07c9150dd824c461836c9514afb26330dd3607a144a616b3ff76496e"
 }

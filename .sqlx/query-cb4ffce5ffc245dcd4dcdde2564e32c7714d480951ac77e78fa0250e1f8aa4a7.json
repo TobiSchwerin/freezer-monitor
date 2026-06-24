@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO sensoren (name, standort, sleep_minuten) VALUES (?, ?, 120)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "cb4ffce5ffc245dcd4dcdde2564e32c7714d480951ac77e78fa0250e1f8aa4a7"
+}

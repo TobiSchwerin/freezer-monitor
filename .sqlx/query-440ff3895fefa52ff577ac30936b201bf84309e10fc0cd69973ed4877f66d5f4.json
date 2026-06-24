@@ -1,0 +1,20 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT sleep_minuten as \"sleep_minuten!: i64\" FROM sensoren WHERE id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "sleep_minuten!: i64",
+        "ordinal": 0,
+        "type_info": "Integer"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "440ff3895fefa52ff577ac30936b201bf84309e10fc0cd69973ed4877f66d5f4"
+}

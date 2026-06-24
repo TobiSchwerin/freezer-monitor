@@ -1,25 +1,25 @@
 {
   "db_name": "SQLite",
-  "query": "SELECT id, sensor_id, alarm_typ, nachricht, zeitstempel as \"zeitstempel: String\" FROM alarm_historie ORDER BY zeitstempel DESC LIMIT 10",
+  "query": "SELECT id as \"id!: i64\", sensor_id as \"sensor_id!: i64\", \n        alarm_typ as \"alarm_typ!: String\", nachricht as \"nachricht!: String\", \n        zeitstempel as \"zeitstempel: String\" \n        FROM alarm_historie ORDER BY zeitstempel DESC LIMIT 10",
   "describe": {
     "columns": [
       {
-        "name": "id",
+        "name": "id!: i64",
         "ordinal": 0,
         "type_info": "Integer"
       },
       {
-        "name": "sensor_id",
+        "name": "sensor_id!: i64",
         "ordinal": 1,
         "type_info": "Integer"
       },
       {
-        "name": "alarm_typ",
+        "name": "alarm_typ!: String",
         "ordinal": 2,
         "type_info": "Text"
       },
       {
-        "name": "nachricht",
+        "name": "nachricht!: String",
         "ordinal": 3,
         "type_info": "Text"
       },
@@ -40,5 +40,5 @@
       true
     ]
   },
-  "hash": "bd6ca8616f1c1edb8544a05dc4f70cd36999c299fdb4bf6a68de879ca60a43ec"
+  "hash": "4a09703cf3bcccd8d967da9869edc0515b5427a3fea77abc0b70ea849dbb2a6e"
 }

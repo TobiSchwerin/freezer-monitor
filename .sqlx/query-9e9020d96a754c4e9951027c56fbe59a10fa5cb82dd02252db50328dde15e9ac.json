@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "UPDATE sensoren SET name = ?, standort = ?, sleep_minuten = ? WHERE id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "9e9020d96a754c4e9951027c56fbe59a10fa5cb82dd02252db50328dde15e9ac"
+}

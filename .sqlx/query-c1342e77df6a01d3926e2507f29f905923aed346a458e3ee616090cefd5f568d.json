@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "UPDATE alarm_config SET alarm_quittiert = 0 WHERE sensor_id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "c1342e77df6a01d3926e2507f29f905923aed346a458e3ee616090cefd5f568d"
+}
