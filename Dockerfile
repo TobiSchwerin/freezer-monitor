@@ -17,6 +17,7 @@ RUN rm -rf src
 COPY .sqlx ./.sqlx
 COPY migrations ./migrations
 COPY src ./src
+RUN touch src/main.rs
 ENV SQLX_OFFLINE=true
 RUN cargo build --release
 
