@@ -145,7 +145,7 @@ pub async fn starte_daten_bereinigung(db: sqlx::SqlitePool) {
 
         println!("Starte wöchentliche Datenbereinigung...");
 
-        match sqlx::query!(
+        match sqlx::query(
             "DELETE FROM messwerte WHERE zeitstempel < datetime('now', '-21 days')"
         )
         .execute(&db)
@@ -154,7 +154,7 @@ pub async fn starte_daten_bereinigung(db: sqlx::SqlitePool) {
             Err(e) => eprintln!("Fehler bei Messwert-Bereinigung: {}", e),
         }
 
-        match sqlx::query!(
+        match sqlx::query(
             "DELETE FROM alarm_historie WHERE zeitstempel < datetime('now', '-21 days')"
         )
         .execute(&db)
