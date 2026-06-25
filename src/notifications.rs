@@ -140,13 +140,13 @@ fn berechne_alter_minuten(zeitstempel: &str) -> i64 {
 
 pub async fn starte_daten_bereinigung(db: sqlx::SqlitePool) {
     loop {
-        // 30 Tage warten
-        tokio::time::sleep(tokio::time::Duration::from_secs(30 * 24 * 60 * 60)).await;
+        // Wöchentlich prüfen (Retention: 3 Wochen)
+        tokio::time::sleep(tokio::time::Duration::from_secs(7 * 24 * 60 * 60)).await;
 
-        println!("Starte monatliche Datenbereinigung...");
+        println!("Starte wöchentliche Datenbereinigung...");
 
         match sqlx::query!(
-            "DELETE FROM messwerte WHERE zeitstempel < datetime('now', '-3 months')"
+            "DELETE FROM messwerte WHERE zeitstempel < datetime('now', '-21 days')"
         )
         .execute(&db)
         .await {
@@ -155,7 +155,7 @@ pub async fn starte_daten_bereinigung(db: sqlx::SqlitePool) {
         }
 
         match sqlx::query!(
-            "DELETE FROM alarm_historie WHERE zeitstempel < datetime('now', '-3 months')"
+            "DELETE FROM alarm_historie WHERE zeitstempel < datetime('now', '-21 days')"
         )
         .execute(&db)
         .await {

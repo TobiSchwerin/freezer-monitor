@@ -7,8 +7,7 @@ const FARBEN = ['#38bdf8', '#4ade80', '#f87171', '#facc15', '#a78bfa', '#fb923c'
 const ZEITRAUM_OPTIONEN = [
   { label: '24h', tage: 1 },
   { label: '7 Tage', tage: 7 },
-  { label: '30 Tage', tage: 30 },
-  { label: '3 Monate', tage: 90 },
+  { label: '3 Wochen', tage: 21 },
 ]
 
 const utcZuLokal = (zeitstempel) => {
@@ -40,7 +39,7 @@ function App() {
   const [neuerSensor, setNeuerSensor] = useState(null)
   const [user, setUser] = useState(null)
   const [meldung, setMeldung] = useState(null)
-  const [diagrammTage, setDiagrammTage] = useState(90)
+  const [diagrammTage, setDiagrammTage] = useState(21)
   const [diagrammSensorId, setDiagrammSensorId] = useState(null)
 
   const [quittierenBestaetigung, setQuittierenBestaetigung] = useState(null)

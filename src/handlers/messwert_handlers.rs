@@ -21,7 +21,7 @@ pub async fn messwerte_laden(
     State(state): State<AppState>,
     Query(filter): Query<MesswertFilter>,
 ) -> Result<Json<Vec<Messwert>>, AppError> {
-    let tage = filter.tage.unwrap_or(90);
+    let tage = filter.tage.unwrap_or(21);
 
     let messwerte = match filter.sensor_id {
         Some(sensor_id) => sqlx::query_as!(
